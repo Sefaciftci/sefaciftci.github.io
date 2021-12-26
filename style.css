@@ -1,0 +1,271 @@
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+    
+}
+a{
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #161616;
+}
+
+/*NAVBAR*/
+
+.navbar .nav-link{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Breadcrumb*/
+
+.breadcrmb{
+    width: 100%;
+    background-color: #333;
+    color: #ccc;
+    
+}
+
+/*HEADER*/
+
+#header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/Header1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+#header h1{
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+
+/*Course*/
+
+.h-line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.courses{
+    margin-top: 50px;
+}
+.courses p{
+    color: rgb(175, 168, 168);
+}
+.courses h4{
+    color: rgb(201, 198, 198);
+}
+
+/*Message*/
+
+#message{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/Message.jpg);
+    width: 100%;
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/*Movies*/
+
+.movie-item{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.movie-item img, .movie-item .movie-overlay{
+    transition: all 1 ease;
+}
+.movie-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 9, 9, 0.6);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+.movie-overlay h3 , .movie-overlay h6{
+    color: white;
+}
+
+.movie-item:hover .movie-overlay{
+    opacity: 1;
+}
+
+/*teachers-section*/
+
+.course-img img{
+    height: 50vh;
+    width: 100%;
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.teacher h3{
+    color: rgb(201, 198, 198);
+}
+
+/*Footer-section*/
+
+#footer{
+    background-color: #212529;
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.social-group ul{
+    list-style: none;
+    
+}
+.social-group ul li{
+    display: inline-block;
+    color: #333;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.social-group ul li a{
+    font-size: 30px;
+    color: rgb(134, 134, 134);
+    transition: all 0.5s ease;
+    
+}
+.social-group ul li a:hover{
+    opacity: .7;
+}
+.buttons p{
+    margin-top: 20px;
+}
+
+button{
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 32px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: 1s ease;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+
+/*About page*/
+
+.about-header{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+.header2{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about-text p{
+    color: rgb(216, 214, 214);
+}
+.about-text h2{
+    margin-bottom: 15px;
+}
+.social-group h2{
+    margin-bottom: 15px;
+}
+
+
+/*Albume page*/
+
+.albume{
+	padding: 80px 0;
+}
+.albume img{
+	background-color: #ffffff;
+	padding: 6px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+/*Contact page*/
+
+#location iframe{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.icons .icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icon .far ,.icon .fas{
+    font-size: 48px;
+    color: rgb(143, 141, 141);
+    margin:10px;
+    margin-right: 40px;
+}
+.icon h4{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgb(204, 203, 203);
+}
+.icon p{
+    color: rgb(180, 175, 175);
+}
+
+
+.form1 input , .form1 textarea{
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 17px;
+    border:1px solid #ccc;
+    background: transparent;
+    color: #fff;
+}
+textarea{
+    color: #fff;
+}
+
